@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> <!-- Pure CSS -->
+	<link rel="stylesheet" href="index_style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script rel="javascript" src="index.js"></script>
+	<title>Clinic Check In</title> 
+</head>
+<body>
+	<div id="head_banner">
+			<img class="logo" src="https://www.seattlentc.com/wp-content/uploads/2015/07/seattlelogowhite.png" alt="SNTC Logo"> 
+			<h1 class="center">Check-In</h1>
+	</div>
+
+	<!-- form to be filled out my patient! -->
+	<form class="pure-form pure-form-aligned" onsubmit="return false;">
+    <fieldset>
+        <div class="container">
+        	<h2>Name</h2>
+            <input id="name" type="text" placeholder="Full Name" required>
+        </div>
+		
+		<div class="container border_right border_left">
+	
+			<h2>Here To See</h2>
+	
+			  <ul>
+			  <li>
+			  	<input type="radio" id="f-option" name="Provider" value="TMS Clinician">
+			  	<label for="f-option">TMS Clinician</label>
+
+			  	<div class="check"><div class="inside"></div></div>
+		  	  </li>
+
+			  <li>
+			    <input type="radio" id="s-option" name="Provider" value="Dr. Melman" >
+			    <label for="s-option">Dr. Melman</label>
+			    
+			    <div class="check"></div>
+			  </li>
+			  
+			  <li>
+			    <input type="radio" id="t-option" name="Provider" value="Dr. Bess">
+			    <label for="t-option">Dr. Bess</label>
+			    
+			    <div class="check"><div class="inside"></div></div>
+			  </li>
+			  
+			  <li>
+			    <input type="radio" id="u-option" name="Provider" value="Dr. Kerns">
+			    <label for="u-option">Dr. Kerns</label>
+			    
+			    <div class="check"><div class="inside"></div></div>
+			  </li>
+
+			  <li>
+			  	<input type="radio" id="v-option" name="Provider" value="Dr. Burns">
+			  	<label for="v-option">Dr. Burns</label>
+
+			  	<div class="check"><div class="inside"></div></div>
+		  	  </li>
+
+		  	  <li>
+			  	<input type="radio" id="w-option" name="Provider" value="Ellie Gunnoe">
+			  	<label for="w-option">Ellie Gunnoe</label>
+
+			  	<div class="check"><div class="inside"></div></div>
+		  	  </li>
+			</ul>
+		</div>
+
+		<div class="container border_right">
+	
+			<h2>Reason For Visit</h2>
+	
+			  <ul>
+			  <li>
+			    <input type="radio" id="f1-option" name="RFV" value="Office Visit">
+			    <label for="f1-option">Office Visit</label>
+			    
+			    <div class="check"></div>
+			  </li>
+
+			  <li>
+			    <input type="radio" id="s1-option" name="RFV" value="TMS">
+			    <label for="s1-option">TMS</label>
+			    
+			    <div class="check"><div class="inside"></div></div>
+			  </li>
+
+			  <li>
+			    <input type="radio" id="t1-option" name="RFV" value="Other">
+			    <label for="t1-option">Other</label>
+			    
+			    <div class="check"><div class="inside"></div></div>
+			  </li>
+			</ul>
+		</div>
+	</div>
+    </fieldset>
+    <button class="button" type="button" id="submit_button">Submit</button>
+</form> 
+</body>
+</html>
